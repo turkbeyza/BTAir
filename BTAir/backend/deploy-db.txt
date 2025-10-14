@@ -1,0 +1,1 @@
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=BTAir123*" -p 1433:1433 --name btair-sqlserver -d mcr.microsoft.com/mssql/server:2022-latest
