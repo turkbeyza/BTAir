@@ -83,6 +83,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
       setUser({
         userID: response.userID,
         name: response.name,
+        firstName: response.name.split(' ')[0],
+        lastName: response.name.split(' ')[1],
         email: response.email,
         role: response.role,
         createdAt: new Date().toISOString(),
@@ -113,6 +115,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
       setUser({
         userID: response.userID,
         name: response.name,
+        firstName: response.name.split(' ')[0],
+        lastName: response.name.split(' ')[1],
         email: response.email,
         role: response.role,
         createdAt: new Date().toISOString(),
